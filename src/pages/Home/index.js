@@ -37,7 +37,7 @@ function App(props){
   const handleSubmit = async(event) => {
     event.preventDefault();
     try{
-      const user = await axios.post('http://localhost:3000/register', form)
+      const user = await axios.post('https://apicadastrocurriculo.herokuapp.com/register', form)
       console.log(user)
       if(user.status === 200){
         history.push('./cadastrado')
