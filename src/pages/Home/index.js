@@ -28,7 +28,7 @@ function App(props){
     email : '',
     identidade : '',
     cpf : '',
-    veiculo : 1,
+    veiculo : false,
     habilitacao : '',
   });
 
@@ -220,7 +220,7 @@ function App(props){
         <label><b>Estado</b></label>
         <br/>
         <input type='text' id='inputEstado' value={form.estado}
-        onChange={e => setForm({...form, estado: e.target.value})} required />
+        onChange={e => setForm({...form, estado: e.target.value})} />
       </div>
       </fieldset>
 
@@ -256,7 +256,7 @@ function App(props){
           <label><b>Identidade</b></label>
           <br/>
           <input type='text' id='inputId' value={form.identidade} 
-          onChange={e => setForm({...form, identidade: e.target.value})}  required/>
+          onChange={e => setForm({...form, identidade: e.target.value})} />
           
         </div>
         <div id='cpf'>
@@ -271,11 +271,11 @@ function App(props){
           <br/>
           <label>
             <input type="radio" name="veiculo"  value={form.veiculo} 
-            onChange={e => setForm({...form, veiculo: true})} defaultChecked/>Sim
+            onChange={e => setForm({...form, veiculo: false})} defaultChecked/>Não
           </label>
           <label>
               <input type="radio" name="veiculo" 
-              onChange={e => setForm({...form, veiculo: false})} />Não
+              onChange={e => setForm({...form, veiculo: true})} />Sim
           </label>
         </div>
         <div id='habilitacao'>
