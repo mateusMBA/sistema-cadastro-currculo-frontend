@@ -153,7 +153,7 @@ function App(props){
           <select id='estadoCivil'value={form.estado_civil}
           onChange={e => setForm({...form, estado_civil: e.target.value})}>
             <option defaultValue disabled value=''>Selecione</option>
-            <option value='Solteira(a)'>Solteiro(a)</option>
+            <option value='Solteiro(a)'>Solteiro(a)</option>
             <option value='Casado(a)'>Casado(a)</option>
             <option value='Divorciado(a)'>Divorciado(a)</option>
             <option value='Viúvo(a)'>Viúvo(a)</option>
