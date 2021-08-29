@@ -126,7 +126,7 @@ function App(props){
       </fieldset>
       <fieldset className="linha"> 
         <div id='profissao'>
-          <label><b>Profissão</b></label>
+          <label><b>Profissão *</b></label>
           <br/>
           <input id='inputProfissao' type='text' value={form.profissao}
           onChange={e => setForm({...form, profissao: e.target.value})} required/>
@@ -141,7 +141,7 @@ function App(props){
 
       <fieldset className='linha'>
         <div id='nascimento'>
-          <label><b>Data de Nascimento</b></label>
+          <label><b>Data de Nascimento *</b></label>
           <br/>
           <input type='date' id='dataNascimento' value={form.data_nascimento}
           onChange={e => setForm({...form, data_nascimento: e.target.value})} required/>
@@ -175,7 +175,7 @@ function App(props){
       
       <fieldset className='linha'>
         <div id='cep'>
-          <label><b>Cep</b></label>
+          <label><b>CEP *</b></label>
           <br/>
           <input type='text'id='inputCep' value={form.cep} onBlur={handleCep}
           onChange={e => setForm({...form, cep: e.target.value})}  placeholder=" _____-___" required/>
@@ -184,13 +184,13 @@ function App(props){
 
       <fieldset className='linha'>
         <div id='logradouro'>
-          <label><b>Logradouro</b></label>
+          <label><b>Logradouro *</b></label>
           <br/>
           <input type='text' id='inputLogradouro' value={form.logradouro}
           onChange={e => setForm({...form, logradouro: e.target.value})} required />
         </div>
         <div id='numero'>
-          <label><b>Número</b></label>
+          <label><b>Número *</b></label>
           <br/>
           <input type='text' id='inputNumero' value={form.numero}
           onChange={e => setForm({...form, numero: e.target.value})} required />
@@ -204,13 +204,13 @@ function App(props){
       </fieldset>
       <fieldset className="linha">
         <div id='bairro'>
-          <label><b>Bairro</b></label>
+          <label><b>Bairro *</b></label>
           <br/>
           <input type='text' id='inputBairro' value={form.bairro} 
           onChange={e => setForm({...form, bairro: e.target.value})} required />
         </div>
         <div id='cidade'>
-          <label><b>Cidade</b></label>
+          <label><b>Cidade *</b></label>
           <br/>
           <input type='text' id='inputCidade' value={form.cidade}
           onChange={e => setForm({...form, cidade: e.target.value})} required />
@@ -227,7 +227,7 @@ function App(props){
 
       <fieldset className='linha'>
         <div id='celular'>
-          <label><b>Celular</b></label>
+          <label><b>Celular *</b></label>
           <br/>
           <input type='text' id='inputCelular' value={form.celular}
           onChange={e => setForm({...form, celular: e.target.value})} required/>
@@ -239,7 +239,7 @@ function App(props){
           onChange={e => setForm({...form, telefone: e.target.value})} />
         </div>
         <div id='email'>
-          <label><b>E-mail</b></label>
+          <label><b>E-mail *</b></label>
           <br/>
           <input type='email' id='inputEmail' placeholder="usuario@email.com"
           value={form.email} onChange={e => setForm({...form, email: e.target.value})}  required/>
@@ -260,7 +260,7 @@ function App(props){
           
         </div>
         <div id='cpf'>
-          <label><b>CPF</b></label>
+          <label><b>CPF *</b></label>
           <br/>
           <input type='text' onBlur={handleCPF} id='inputCPF' value={form.cpf} 
           onChange={e => setForm({...form, cpf: e.target.value})} placeholder=' ___.___.___-__' required />
