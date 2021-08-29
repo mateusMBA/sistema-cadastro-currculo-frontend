@@ -1,0 +1,59 @@
+.corpoFormulario{
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #4e54c8;
+  background: #eadcf0;
+  margin: 2% 15% 3% 15%;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px #59429d solid;
+  box-shadow: 10px 5px 5px black;
+}
+
+.titulo {
+  display:flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-family: sans-serif;
+  color: #59429d;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-bottom: 2.5px #59429d solid;
+  
+
+}
+
+input, select {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #59429d;
+  border-radius: 5px;
+}
+
+#botaoVoltar{
+  margin-top: 5px;
+  margin-bottom: 30px;
+  justify-content: flex-end;
+  width: 85.5%;
+  display:flex;
+  transition: 300ms;
+  
+}
+
+#voltar:hover{
+  background-color:#59429d; 
+  font-weight: bold;
+
+}
+
+#voltar{
+  background-color:#59429d; 
+  font-family: sans-serif;
+  font-size: 1em;
+  color:white;
+  height: 35px;
+  width: 180px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+

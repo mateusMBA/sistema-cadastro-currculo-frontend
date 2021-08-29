@@ -1,0 +1,188 @@
+
+* {
+  
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  /* border-bottom: 2px solid white */
+  box-shadow: 1px 1px 10px 1px #59429d;  /*não sei mt bem como funcionou n*/
+  /* border-bottom: 15px ridge white; bordinha 3D*/
+  margin-bottom: 35px; 
+}
+
+header div{
+  width: 15%;
+}
+
+header ul{
+  display:flex;
+  justify-content: flex-end
+}
+
+
+
+header ul li{
+  transition: 300ms;
+  cursor: pointer;
+  list-style: none;
+  color: #59429d;
+}
+
+#quemSomos{
+  margin-right: 40px;
+}
+
+
+
+header ul li p:hover{
+  font-weight: bold;
+  color: #59429d;
+  text-decoration: underline
+
+}
+
+body{
+  background-color: white;
+}
+
+form{
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #4e54c8;
+  background: #eadcf0;
+  margin: 2% 15% 3% 15%;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px #59429d solid;
+  box-shadow: 10px 5px 5px black;
+}
+
+.titulo {
+  display:flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-family: sans-serif;
+  color: #59429d;
+  font-size: 1.6em;
+  font-weight: bold;
+  border-bottom: 2.5px #59429d solid;
+  
+
+}
+
+input, select {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #59429d;
+  border-radius: 5px;
+}
+
+#botaoRegistro{
+  margin-top: 35px;
+  margin-bottom: 10px;
+  justify-content: center;
+  display:flex;
+  transition: 300ms;
+  
+}
+
+#registro:hover{
+  background-color:#59429d; 
+  font-weight: bold;
+
+}
+
+#registro{
+  background-color:#59429d; 
+  font-family: sans-serif;
+  font-size: 1em;
+  color:white;
+  height: 35px;
+  width: 180px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.linha div {
+  display: inline-block;
+  margin: 15px 25px 2px 5px ;
+  color: #59429d;
+  border-top: 1px;
+}
+
+.linha div input{
+  height: 20px;
+}
+
+#cabeçalho{
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 35px;
+  font-family: sans-serif;
+  color: #59429d;
+  font-size: 1em;
+  font-weight: bold;
+
+}
+
+
+#inputNome{
+  width: 9cm;
+}
+
+#inputEmail{
+  width: 8cm;
+}
+
+#dataNascimento{
+  margin-right: 32px;
+}
+
+#cpf{
+  margin-right: 32px;
+}
+
+#estadoCivil{
+  margin-right: 82px;;
+}
+#veiculo{
+  margin-right: 42px;;
+}
+
+#documentos{
+  margin-top: 25px;
+}
+
+.rodape{
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+  margin-bottom: 10px;;
+
+}
+
+.rodape div p{
+  font-family: sans-serif;
+  color: #59429d;
+  font-size: 1em;
+  font-weight: bold;
+  margin-right: 0.8cm;
+  margin-top: 12px;
+}
+
+.rodape div a img{
+  height: 35px;
+  width: 35px;
+  margin: auto 10px
+}
